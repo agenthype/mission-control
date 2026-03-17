@@ -1,0 +1,62 @@
+{
+  "lastUpdated": "2026-03-17T08:54:22+00:00",
+  "actionRequired": [
+    {
+      "title": "Higgsfield Kling endpoint returning 500s",
+      "url": "https://status.higgsfield.ai",
+      "priority": "high"
+    },
+    {
+      "title": "GitHub Pages publish for mission-control",
+      "url": "https://github.com/settings/pages",
+      "priority": "medium"
+    }
+  ],
+  "activeNow": [
+    {
+      "task": "Rewiring Higgsfield client + dashboard setup",
+      "model": "openai/gpt-5.1-codex",
+      "startedAt": "2026-03-17T08:54:22+00:00"
+    }
+  ],
+  "products": [
+    {
+      "name": "meta-cpl-monitor (Railway)",
+      "url": "https://railway.com/project/8815953c-b845-45dd-9e59-53a6b8cf4156",
+      "status": "down",
+      "lastChecked": "2026-03-17T08:54:22+00:00"
+    },
+    {
+      "name": "caption-updater (Railway)",
+      "url": "https://railway.com/project/0d49da42-42be-4b9d-b99c-fbd4cd91b273",
+      "status": "live",
+      "lastChecked": "2026-03-17T08:54:22+00:00"
+    },
+    {
+      "name": "AI video pipeline",
+      "url": "https://railway.com/project/0d49da42-42be-4b9d-b99c-fbd4cd91b273/service/ai-video-automation",
+      "status": "testing",
+      "lastChecked": "2026-03-17T08:54:22+00:00"
+    }
+  ],
+  "crons": [
+    {
+      "name": "Dashboard Update",
+      "schedule": "Every 30 minutes",
+      "lastRun": null,
+      "status": "pending",
+      "errors": 0,
+      "lastError": null
+    }
+  ],
+  "recentActivity": [
+    {
+      "time": "2026-03-17T08:54:22+00:00",
+      "event": "\ud83d\udce7 Escalated Kling 500 issue to Higgsfield support"
+    },
+    {
+      "time": "2026-03-17T08:54:22+00:00",
+      "event": "\ud83d\udee0\ufe0f Wiring mission control Tier 2 dashboard"
+    }
+  ]
+}
