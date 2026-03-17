@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-17T09:16:45Z",
+  "lastUpdated": "2026-03-17T09:31:01Z",
   "actionRequired": [
     {
       "title": "Higgsfield Kling endpoint returning 500s",
@@ -10,13 +10,18 @@
       "title": "GitHub Pages publish for mission-control",
       "url": "https://github.com/settings/pages",
       "priority": "medium"
+    },
+    {
+      "title": "Meta Ads CPL monitor still down on Railway",
+      "url": "https://railway.com/project/8815953c-b845-45dd-9e59-53a6b8cf4156",
+      "priority": "high"
     }
   ],
   "activeNow": [
     {
-      "task": "Rewiring Higgsfield client + dashboard setup",
+      "task": "Cron: Dashboard Update",
       "model": "openai/gpt-5.1-codex",
-      "startedAt": "2026-03-17T09:16:45Z"
+      "startedAt": "2026-03-17T09:30:00Z"
     }
   ],
   "products": [
@@ -24,39 +29,43 @@
       "name": "meta-cpl-monitor (Railway)",
       "url": "https://railway.com/project/8815953c-b845-45dd-9e59-53a6b8cf4156",
       "status": "down",
-      "lastChecked": "2026-03-17T09:16:45Z"
+      "lastChecked": "2026-03-17T09:31:01Z"
     },
     {
       "name": "caption-updater (Railway)",
       "url": "https://railway.com/project/0d49da42-42be-4b9d-b99c-fbd4cd91b273",
       "status": "live",
-      "lastChecked": "2026-03-17T09:16:45Z"
+      "lastChecked": "2026-03-17T09:31:01Z"
     },
     {
       "name": "AI video pipeline",
       "url": "https://railway.com/project/0d49da42-42be-4b9d-b99c-fbd4cd91b273/service/ai-video-automation",
       "status": "testing",
-      "lastChecked": "2026-03-17T09:16:45Z"
+      "lastChecked": "2026-03-17T09:31:01Z"
     }
   ],
   "crons": [
     {
       "name": "Dashboard Update",
-      "schedule": "Every 30 minutes",
+      "schedule": "*/30 * * * *",
       "lastRun": null,
-      "status": "pending",
+      "status": "running",
       "errors": 0,
       "lastError": null
     }
   ],
   "recentActivity": [
     {
-      "time": "2026-03-17T09:16:45Z",
-      "event": "\ud83d\udce7 Escalated Kling 500 issue to Higgsfield support"
+      "time": "2026-03-17T09:31:01Z",
+      "event": "🤖 Dashboard auto-refresh executed via cron job"
+    },
+    {
+      "time": "2026-03-17T09:20:00Z",
+      "event": "⚠️ Meta Ads CPL monitor remains offline pending action_type fix"
     },
     {
       "time": "2026-03-17T09:16:45Z",
-      "event": "\ud83d\udee0\ufe0f Wiring mission control Tier 2 dashboard"
+      "event": "📡 Higgsfield Kling 500s escalated to vendor support"
     }
   ]
 }
