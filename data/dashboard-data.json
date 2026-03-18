@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-18T00:00:00Z",
+  "lastUpdated": "2026-03-18T00:30:23Z",
   "actionRequired": [
     {
       "title": "Meta Ads CPL monitor still down on Railway",
@@ -12,7 +12,7 @@
     {
       "task": "Cron: Dashboard Update",
       "model": "gpt-5.1-codex",
-      "updatedAt": "2026-03-18T00:00:00.020Z",
+      "updatedAt": "2026-03-18T00:30:00.026000Z",
       "status": "running"
     }
   ],
@@ -21,43 +21,43 @@
       "name": "meta-cpl-monitor (Railway)",
       "url": "https://railway.com/project/8815953c-b845-45dd-9e59-53a6b8cf4156",
       "status": "down",
-      "lastChecked": "2026-03-18T00:00:00Z"
+      "lastChecked": "2026-03-18T00:30:23Z"
     },
     {
       "name": "caption-updater (Railway)",
       "url": "https://railway.com/project/0d49da42-42be-4b9d-b99c-fbd4cd91b273",
       "status": "live",
-      "lastChecked": "2026-03-18T00:00:00Z"
+      "lastChecked": "2026-03-18T00:30:23Z"
     },
     {
       "name": "AI video pipeline",
       "url": "https://railway.com/project/0d49da42-42be-4b9d-b99c-fbd4cd91b273/service/ai-video-automation",
       "status": "testing",
-      "lastChecked": "2026-03-18T00:00:00Z"
+      "lastChecked": "2026-03-18T00:30:23Z"
     }
   ],
   "crons": [
     {
       "name": "Dashboard Update",
       "schedule": "*/30 * * * *",
-      "lastRun": "2026-03-17T23:30:00.014000Z",
+      "lastRun": "2026-03-18T00:00:00.016000Z",
       "status": "ok",
       "errors": 0,
-      "lastDurationMs": 77457
+      "lastDurationMs": 73938
     }
   ],
   "recentActivity": [
     {
-      "time": "2026-03-18T00:00:00Z",
-      "event": "⚙️ Cron: Dashboard Update triggered and currently running (gpt-5.1-codex)."
+      "time": "2026-03-18T00:30:00.026000Z",
+      "event": "⚙️ Cron: Dashboard Update is currently running (gpt-5.1-codex)."
     },
     {
-      "time": "2026-03-17T23:30:00.014000Z",
-      "event": "✅ Previous Dashboard Update cron completed successfully (77.5s runtime)."
+      "time": "2026-03-18T00:00:00.016000Z",
+      "event": "✅ Previous Dashboard Update cron completed successfully (73.9s runtime)."
     },
     {
-      "time": "2026-03-18T00:00:00Z",
-      "event": "🚨 Meta Ads CPL monitor remains offline on Railway; action still required."
+      "time": "2026-03-18T00:30:23Z",
+      "event": "🚨 Meta Ads CPL monitor still offline on Railway; intervention required."
     }
   ]
 }
