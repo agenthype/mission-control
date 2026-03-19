@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-03-19T04:00:00Z",
+  "lastUpdated": "2026-03-19T04:30:26Z",
   "actionRequired": [
     {
       "title": "Meta Ads CPL monitor still down on Railway",
       "url": "https://railway.com/project/8815953c-b845-45dd-9e59-53a6b8cf4156",
       "priority": "high",
-      "note": "Service remains offline as of the 04:00 UTC sweep; remediation still pending."
+      "note": "Service remains offline as of the 04:30 UTC sweep; remediation still pending."
     }
   ],
   "activeNow": [
     {
       "task": "Cron: Dashboard Update",
       "model": "gpt-5.1-codex",
-      "updatedAt": "2026-03-19T04:00:00.030Z",
+      "updatedAt": "2026-03-19T04:30:00Z",
       "status": "running"
     }
   ],
@@ -21,41 +21,41 @@
       "name": "meta-cpl-monitor (Railway)",
       "url": "https://railway.com/project/8815953c-b845-45dd-9e59-53a6b8cf4156",
       "status": "down",
-      "lastChecked": "2026-03-19T04:00:00Z"
+      "lastChecked": "2026-03-19T04:30:26Z"
     },
     {
       "name": "caption-updater (Railway)",
       "url": "https://railway.com/project/0d49da42-42be-4b9d-b99c-fbd4cd91b273",
       "status": "live",
-      "lastChecked": "2026-03-19T04:00:00Z"
+      "lastChecked": "2026-03-19T04:30:26Z"
     },
     {
       "name": "AI video pipeline",
       "url": "https://railway.com/project/0d49da42-42be-4b9d-b99c-fbd4cd91b273/service/ai-video-automation",
       "status": "testing",
-      "lastChecked": "2026-03-19T04:00:00Z"
+      "lastChecked": "2026-03-19T04:30:26Z"
     }
   ],
   "crons": [
     {
       "name": "Dashboard Update",
       "schedule": "*/30 * * * *",
-      "lastRun": "2026-03-19T03:30:00.028Z",
+      "lastRun": "2026-03-19T04:00:00Z",
       "status": "ok",
       "errors": 0
     }
   ],
   "recentActivity": [
     {
-      "time": "2026-03-19T04:00:00Z",
-      "event": "⚙️ Cron: Dashboard Update triggered on schedule (gpt-5.1-codex) and is currently running."
-    },
-    {
-      "time": "2026-03-19T03:30:00Z",
-      "event": "✅ Previous cron run completed without errors before the 04:00 UTC window."
+      "time": "2026-03-19T04:30:26Z",
+      "event": "⚙️ Cron: Dashboard Update kicked off the 04:30 UTC sweep (gpt-5.1-codex) and is currently running."
     },
     {
       "time": "2026-03-19T04:00:00Z",
+      "event": "✅ Previous Dashboard Update cron completed without errors."
+    },
+    {
+      "time": "2026-03-19T04:30:26Z",
       "event": "🚨 Meta Ads CPL monitor still offline on Railway; remediation remains outstanding."
     }
   ]
