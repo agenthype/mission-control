@@ -1,18 +1,24 @@
 {
-  "lastUpdated": "2026-03-18T23:30:00Z",
+  "lastUpdated": "2026-03-19T00:00:00Z",
   "actionRequired": [
     {
       "title": "Meta Ads CPL monitor still down on Railway",
       "url": "https://railway.com/project/8815953c-b845-45dd-9e59-53a6b8cf4156",
       "priority": "high",
-      "note": "Service has been offline through the 23:30 UTC check; unblock before the next reporting window."
+      "note": "Service remained offline through the 00:00 UTC sweep; remediation still pending."
+    },
+    {
+      "title": "Dashboard Update cron timed out at 23:30 UTC",
+      "url": "",
+      "priority": "medium",
+      "note": "Latest completed run exceeded the timeout (121.9s) and needs investigation before the next interval."
     }
   ],
   "activeNow": [
     {
       "task": "Cron: Dashboard Update",
       "model": "gpt-5.1-codex",
-      "updatedAt": "2026-03-18T23:30:00.028Z",
+      "updatedAt": "2026-03-19T00:00:00.011Z",
       "status": "running"
     }
   ],
@@ -21,43 +27,43 @@
       "name": "meta-cpl-monitor (Railway)",
       "url": "https://railway.com/project/8815953c-b845-45dd-9e59-53a6b8cf4156",
       "status": "down",
-      "lastChecked": "2026-03-18T23:30:00Z"
+      "lastChecked": "2026-03-19T00:00:00Z"
     },
     {
       "name": "caption-updater (Railway)",
       "url": "https://railway.com/project/0d49da42-42be-4b9d-b99c-fbd4cd91b273",
       "status": "live",
-      "lastChecked": "2026-03-18T23:30:00Z"
+      "lastChecked": "2026-03-19T00:00:00Z"
     },
     {
       "name": "AI video pipeline",
       "url": "https://railway.com/project/0d49da42-42be-4b9d-b99c-fbd4cd91b273/service/ai-video-automation",
       "status": "testing",
-      "lastChecked": "2026-03-18T23:30:00Z"
+      "lastChecked": "2026-03-19T00:00:00Z"
     }
   ],
   "crons": [
     {
       "name": "Dashboard Update",
       "schedule": "*/30 * * * *",
-      "lastRun": "2026-03-18T23:00:00.022Z",
-      "status": "ok",
-      "errors": 0,
-      "lastDurationMs": 59398
+      "lastRun": "2026-03-18T23:30:00.023Z",
+      "status": "error",
+      "errors": 1,
+      "lastDurationMs": 121856
     }
   ],
   "recentActivity": [
     {
-      "time": "2026-03-18T23:30:00.028Z",
-      "event": "⚙️ Cron: Dashboard Update kicked off another run on gpt-5.1-codex."
+      "time": "2026-03-19T00:00:00.011Z",
+      "event": "⚙️ Cron: Dashboard Update kicked off again on gpt-5.1-codex and is currently running."
     },
     {
-      "time": "2026-03-18T23:00:00.022Z",
-      "event": "✅ Cron: Dashboard Update finished successfully in 59.4s."
+      "time": "2026-03-18T23:30:00.023Z",
+      "event": "⛔ Previous dashboard cron run timed out after 121.9s; follow-up required."
     },
     {
       "time": "2026-03-18T23:30:00Z",
-      "event": "🚨 Meta Ads CPL monitor remains offline on Railway; remediation still pending."
+      "event": "🚨 Meta Ads CPL monitor remains offline on Railway."
     }
   ]
 }
