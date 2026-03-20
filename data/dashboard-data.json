@@ -1,19 +1,48 @@
 {
-  "lastUpdated": "2026-03-20T01:00:00Z",
+  "lastUpdated": "2026-03-20T01:30:57Z",
   "actionRequired": [
     {
-      "title": "Meta Ads CPL monitor still down on Railway",
+      "title": "Meta Ads CPL monitor still offline",
       "url": "https://railway.com/project/8815953c-b845-45dd-9e59-53a6b8cf4156",
       "priority": "high",
-      "note": "Service remains offline; redeploy or rollback required before CPL data resumes streaming."
+      "note": "Railway service continues to error out; redeploy or rollback needed before CPL telemetry resumes."
     }
   ],
   "activeNow": [
     {
-      "task": "Cron: Dashboard Update",
+      "task": "Dashboard Update cron (controller)",
+      "sessionKey": "agent:main:cron:a7952d5e-1c73-4595-854d-1e07cbc61e00",
+      "model": "gpt-5.1-codex",
+      "updatedAt": "2026-03-20T01:30:00.029Z",
+      "status": "running"
+    },
+    {
+      "task": "Dashboard Update run 60ba00b8",
+      "sessionKey": "agent:main:cron:a7952d5e-1c73-4595-854d-1e07cbc61e00:run:60ba00b8-bd28-4d3e-a72a-d0ade0c675b2",
+      "model": "gpt-5.1-codex",
+      "updatedAt": "2026-03-20T01:30:00.029Z",
+      "status": "running"
+    },
+    {
+      "task": "Dashboard Update run a125a67b",
+      "sessionKey": "agent:main:cron:a7952d5e-1c73-4595-854d-1e07cbc61e00:run:a125a67b-c436-468b-90c0-964b26d93129",
       "model": "gpt-5.1-codex",
       "updatedAt": "2026-03-20T01:00:00.030Z",
-      "status": "running"
+      "status": "idle"
+    },
+    {
+      "task": "Dashboard Update run 467553f0",
+      "sessionKey": "agent:main:cron:a7952d5e-1c73-4595-854d-1e07cbc61e00:run:467553f0-cf9b-4aff-aad6-650489c5df86",
+      "model": "gpt-5.1-codex",
+      "updatedAt": "2026-03-20T00:30:00.031Z",
+      "status": "idle"
+    },
+    {
+      "task": "Dashboard Update run 62d9cf5d",
+      "sessionKey": "agent:main:cron:a7952d5e-1c73-4595-854d-1e07cbc61e00:run:62d9cf5d-65a4-4686-8589-5bb528ca5ec7",
+      "model": "gpt-5.1-codex",
+      "updatedAt": "2026-03-20T00:00:00.025Z",
+      "status": "idle"
     }
   ],
   "products": [
@@ -21,44 +50,45 @@
       "name": "meta-cpl-monitor (Railway)",
       "url": "https://railway.com/project/8815953c-b845-45dd-9e59-53a6b8cf4156",
       "status": "down",
-      "lastChecked": "2026-03-20T01:00:00Z"
+      "lastChecked": "2026-03-20T01:30:57Z"
     },
     {
       "name": "caption-updater (Railway)",
       "url": "https://railway.com/project/0d49da42-42be-4b9d-b99c-fbd4cd91b273",
       "status": "live",
-      "lastChecked": "2026-03-20T01:00:00Z"
+      "lastChecked": "2026-03-20T01:30:57Z"
     },
     {
       "name": "AI video pipeline",
       "url": "https://railway.com/project/0d49da42-42be-4b9d-b99c-fbd4cd91b273/service/ai-video-automation",
       "status": "testing",
-      "lastChecked": "2026-03-20T01:00:00Z"
+      "lastChecked": "2026-03-20T01:30:57Z"
     }
   ],
   "crons": [
     {
+      "id": "a7952d5e-1c73-4595-854d-1e07cbc61e00",
       "name": "Dashboard Update",
       "schedule": "*/30 * * * *",
-      "lastRun": "2026-03-20T00:30:00.024Z",
-      "nextRun": "2026-03-20T01:00:00Z",
-      "status": "ok",
+      "lastRun": "2026-03-20T01:30:00.029Z",
+      "nextRun": "2026-03-20T02:00:00Z",
+      "status": "running",
       "errors": 0,
       "lastError": null
     }
   ],
   "recentActivity": [
     {
-      "time": "2026-03-20T01:00:00Z",
-      "event": "🟢 Mission Control dashboard refreshed with current cron, session, and product telemetry."
+      "time": "2026-03-20T01:30:00.029Z",
+      "event": "🟢 Dashboard Update cron kicked off the 01:30 UTC refresh cycle and is currently running."
     },
     {
       "time": "2026-03-20T01:00:00.030Z",
-      "event": "📡 Dashboard Update cron session running; watching push completion in real time."
+      "event": "✅ 01:00 UTC dashboard refresh completed with clean git push and zero cron errors."
     },
     {
-      "time": "2026-03-20T00:30:00.024Z",
-      "event": "✅ Previous Dashboard Update cycle completed cleanly with zero errors."
+      "time": "2026-03-20T00:30:00.031Z",
+      "event": "⚠️ Previous run reiterated the meta-cpl-monitor outage; remediation still pending."
     }
   ]
 }
