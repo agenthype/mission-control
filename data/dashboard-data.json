@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T01:30:57Z",
+  "lastUpdated": "2026-03-20T06:47:03Z",
   "actionRequired": [
     {
       "title": "Meta Ads CPL monitor still offline",
@@ -10,39 +10,11 @@
   ],
   "activeNow": [
     {
-      "task": "Dashboard Update cron (controller)",
+      "task": "Cron: Dashboard Update",
       "sessionKey": "agent:main:cron:a7952d5e-1c73-4595-854d-1e07cbc61e00",
       "model": "gpt-5.1-codex",
-      "updatedAt": "2026-03-20T01:30:00.029Z",
+      "updatedAt": "2026-03-20T06:45:27.888Z",
       "status": "running"
-    },
-    {
-      "task": "Dashboard Update run 60ba00b8",
-      "sessionKey": "agent:main:cron:a7952d5e-1c73-4595-854d-1e07cbc61e00:run:60ba00b8-bd28-4d3e-a72a-d0ade0c675b2",
-      "model": "gpt-5.1-codex",
-      "updatedAt": "2026-03-20T01:30:00.029Z",
-      "status": "running"
-    },
-    {
-      "task": "Dashboard Update run a125a67b",
-      "sessionKey": "agent:main:cron:a7952d5e-1c73-4595-854d-1e07cbc61e00:run:a125a67b-c436-468b-90c0-964b26d93129",
-      "model": "gpt-5.1-codex",
-      "updatedAt": "2026-03-20T01:00:00.030Z",
-      "status": "idle"
-    },
-    {
-      "task": "Dashboard Update run 467553f0",
-      "sessionKey": "agent:main:cron:a7952d5e-1c73-4595-854d-1e07cbc61e00:run:467553f0-cf9b-4aff-aad6-650489c5df86",
-      "model": "gpt-5.1-codex",
-      "updatedAt": "2026-03-20T00:30:00.031Z",
-      "status": "idle"
-    },
-    {
-      "task": "Dashboard Update run 62d9cf5d",
-      "sessionKey": "agent:main:cron:a7952d5e-1c73-4595-854d-1e07cbc61e00:run:62d9cf5d-65a4-4686-8589-5bb528ca5ec7",
-      "model": "gpt-5.1-codex",
-      "updatedAt": "2026-03-20T00:00:00.025Z",
-      "status": "idle"
     }
   ],
   "products": [
@@ -50,19 +22,19 @@
       "name": "meta-cpl-monitor (Railway)",
       "url": "https://railway.com/project/8815953c-b845-45dd-9e59-53a6b8cf4156",
       "status": "down",
-      "lastChecked": "2026-03-20T01:30:57Z"
+      "lastChecked": "2026-03-20T06:47:03Z"
     },
     {
       "name": "caption-updater (Railway)",
       "url": "https://railway.com/project/0d49da42-42be-4b9d-b99c-fbd4cd91b273",
       "status": "live",
-      "lastChecked": "2026-03-20T01:30:57Z"
+      "lastChecked": "2026-03-20T06:47:03Z"
     },
     {
       "name": "AI video pipeline",
       "url": "https://railway.com/project/0d49da42-42be-4b9d-b99c-fbd4cd91b273/service/ai-video-automation",
       "status": "testing",
-      "lastChecked": "2026-03-20T01:30:57Z"
+      "lastChecked": "2026-03-20T06:47:03Z"
     }
   ],
   "crons": [
@@ -70,25 +42,26 @@
       "id": "a7952d5e-1c73-4595-854d-1e07cbc61e00",
       "name": "Dashboard Update",
       "schedule": "*/30 * * * *",
-      "lastRun": "2026-03-20T01:30:00.029Z",
+      "lastRun": "2026-03-20T01:30:00.025Z",
       "nextRun": "2026-03-20T02:00:00Z",
-      "status": "running",
+      "status": "ok",
       "errors": 0,
-      "lastError": null
+      "lastError": null,
+      "lastDurationMs": 120963
     }
   ],
   "recentActivity": [
     {
-      "time": "2026-03-20T01:30:00.029Z",
-      "event": "🟢 Dashboard Update cron kicked off the 01:30 UTC refresh cycle and is currently running."
+      "time": "2026-03-20T06:45:27.888Z",
+      "event": "🟢 Cron controller session is live while the dashboard auto-update pushes fresh data."
     },
     {
-      "time": "2026-03-20T01:00:00.030Z",
-      "event": "✅ 01:00 UTC dashboard refresh completed with clean git push and zero cron errors."
+      "time": "2026-03-20T01:30:00.025Z",
+      "event": "✅ Last cron execution completed cleanly in 121s with dashboard refresh and git push."
     },
     {
-      "time": "2026-03-20T00:30:00.031Z",
-      "event": "⚠️ Previous run reiterated the meta-cpl-monitor outage; remediation still pending."
+      "time": "2026-03-20T01:30:57Z",
+      "event": "⚠️ Meta Ads CPL monitor still down; remediation remains outstanding."
     }
   ]
 }
