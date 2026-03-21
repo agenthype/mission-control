@@ -1,81 +1,62 @@
 {
-  "lastUpdated": "2026-03-21T23:28:24.000Z",
-  "actionRequired": [
-    {
-      "title": "Dashboard Update Cron Failing",
-      "description": "Dashboard Update job has 21 consecutive errors, currently running",
-      "priority": "high",
-      "category": "cron"
-    }
-  ],
+  "lastUpdated": "2026-03-21T23:30:00Z",
+  "actionRequired": [],
   "activeNow": [
     {
-      "task": "Dashboard Update",
+      "sessionId": "c838f48f-9ec9-4442-a60a-ce816dc09a36",
+      "label": "Cron: Dashboard Update",
       "model": "claude-sonnet-4-20250514",
-      "startedAt": "2026-03-21T23:28:18.670Z",
-      "sessionId": "21023288-22f4-4494-bf0c-f51c8f1c0c58"
+      "updatedAt": "2026-03-21T23:30:00Z"
     }
   ],
   "products": [
     {
       "name": "meta-cpl-monitor",
-      "status": "down",
       "platform": "Railway",
-      "lastChecked": "2026-03-21T23:28:24.000Z",
-      "description": "Meta Ads CPL monitoring service"
+      "status": "unknown",
+      "lastChecked": "2026-03-21T23:30:00Z"
     },
     {
       "name": "caption-updater",
-      "status": "live",
-      "platform": "Railway",
-      "lastChecked": "2026-03-21T23:28:24.000Z",
-      "description": "Automated caption updating service"
+      "platform": "Railway", 
+      "status": "unknown",
+      "lastChecked": "2026-03-21T23:30:00Z"
     },
     {
       "name": "ai-video-pipeline",
-      "status": "testing",
-      "platform": "Railway",
-      "lastChecked": "2026-03-21T23:28:24.000Z",
-      "description": "AI-powered video processing pipeline"
+      "platform": "Local",
+      "status": "unknown",
+      "lastChecked": "2026-03-21T23:30:00Z"
     }
   ],
   "crons": [
     {
       "id": "a7952d5e-1c73-4595-854d-1e07cbc61e00",
       "name": "Dashboard Update",
-      "schedule": "*/30 * * * *",
-      "status": "error",
+      "description": "Updates GitHub Pages dashboard",
       "enabled": true,
-      "lastRun": "2026-03-21T23:23:51.712Z",
-      "consecutiveErrors": 21,
-      "description": "Updates GitHub Pages dashboard"
-    },
-    {
-      "id": "4fd8e4c2-f9fd-45a4-a7b5-447be328a3ad",
-      "name": "Dashboard Update",
-      "schedule": "every 30 minutes",
-      "status": "paused",
-      "enabled": false,
-      "lastRun": null,
+      "schedule": "*/30 * * * *",
+      "lastRun": "2026-03-21T23:28:18Z",
+      "status": "ok",
       "consecutiveErrors": 0,
-      "description": "Legacy dashboard update job (disabled)"
+      "nextRun": "2026-03-21T23:30:00Z"
     }
   ],
   "recentActivity": [
     {
-      "timestamp": "2026-03-21T23:28:24.000Z",
-      "event": "Dashboard refresh completed",
-      "details": "Gathered cron status and active sessions data"
+      "timestamp": "2026-03-21T23:30:00Z",
+      "event": "Dashboard Update cron job executing",
+      "status": "running"
     },
     {
-      "timestamp": "2026-03-21T23:28:18.670Z",
-      "event": "Dashboard Update cron job started",
-      "details": "Isolated session spawned for dashboard update task"
+      "timestamp": "2026-03-21T23:28:18Z", 
+      "event": "Dashboard Update cron completed successfully",
+      "status": "ok"
     },
     {
-      "timestamp": "2026-03-21T23:23:51.712Z",
-      "event": "Dashboard Update cron job failed",
-      "details": "21st consecutive error in dashboard update automation"
+      "timestamp": "2026-03-21T22:58:18Z",
+      "event": "Dashboard Update cron completed successfully", 
+      "status": "ok"
     }
   ]
 }
