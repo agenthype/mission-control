@@ -1,12 +1,21 @@
 {
-  "lastUpdated": "2026-03-22T01:00:00.000Z",
-  "actionRequired": [],
+  "lastUpdated": "2026-03-22T02:30:00.000Z",
+  "actionRequired": [
+    {
+      "type": "cron",
+      "title": "Dashboard Update Job Failing",
+      "description": "Dashboard Update cron job has 2 consecutive errors",
+      "severity": "medium",
+      "lastSeen": "2026-03-22T02:20:00.015Z"
+    }
+  ],
   "activeNow": [
     {
       "type": "cron",
-      "name": "Dashboard Update",
-      "status": "running",
-      "since": "2026-03-22T01:00:00.024Z"
+      "label": "Dashboard Update",
+      "sessionId": "2bff971e-603e-4b2f-98d6-fcd9421d7166",
+      "startedAt": "2026-03-22T02:30:00.026Z",
+      "model": "claude-sonnet-4-20250514"
     }
   ],
   "products": [
@@ -14,48 +23,54 @@
       "name": "meta-cpl-monitor",
       "platform": "Railway",
       "status": "unknown",
-      "lastCheck": null
+      "lastChecked": "2026-03-22T02:30:00.000Z",
+      "description": "Meta Ads CPL Reporter"
     },
     {
-      "name": "caption-updater", 
-      "platform": "Railway",
+      "name": "caption-updater",
+      "platform": "Railway", 
       "status": "unknown",
-      "lastCheck": null
+      "lastChecked": "2026-03-22T02:30:00.000Z",
+      "description": "Caption updater service"
     },
     {
-      "name": "ai-video pipeline",
+      "name": "ai-video-pipeline",
       "platform": "Local",
       "status": "unknown",
-      "lastCheck": null
+      "lastChecked": "2026-03-22T02:30:00.000Z",
+      "description": "AI video processing pipeline"
     }
   ],
   "crons": [
     {
       "id": "a7952d5e-1c73-4595-854d-1e07cbc61e00",
       "name": "Dashboard Update",
-      "enabled": true,
       "schedule": "*/30 * * * *",
-      "lastRun": "2026-03-22T00:30:00.006Z",
-      "lastStatus": "ok",
-      "consecutiveErrors": 0,
-      "nextRun": "2026-03-22T01:00:00.000Z"
+      "enabled": true,
+      "lastRun": "2026-03-22T02:20:00.015Z",
+      "lastStatus": "error",
+      "consecutiveErrors": 2,
+      "nextRun": "2026-03-22T02:30:00.000Z"
     }
   ],
   "recentActivity": [
     {
-      "timestamp": "2026-03-22T01:00:00.024Z",
-      "type": "cron_start",
-      "description": "Dashboard Update cron job started"
+      "timestamp": "2026-03-22T02:20:00.015Z",
+      "event": "Dashboard Update cron job failed",
+      "type": "error",
+      "details": "2 consecutive failures detected"
     },
     {
-      "timestamp": "2026-03-22T00:30:00.006Z",
-      "type": "cron_complete",
-      "description": "Dashboard Update completed successfully (38.2s)"
+      "timestamp": "2026-03-22T02:30:00.013Z",
+      "event": "Dashboard Update cron job started",
+      "type": "info",
+      "details": "Attempting recovery run"
     },
     {
-      "timestamp": "2026-03-22T00:00:00.000Z",
-      "type": "cron_schedule",
-      "description": "Dashboard Update scheduled for next run"
+      "timestamp": "2026-03-22T02:30:00.000Z",
+      "event": "Mission Control dashboard refresh",
+      "type": "info", 
+      "details": "Automated dashboard data update"
     }
   ]
 }
