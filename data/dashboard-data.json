@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-21T23:30:00Z",
+  "lastUpdated": "2026-03-22T00:00:00.000Z",
   "actionRequired": [],
   "activeNow": [
     {
-      "sessionId": "c838f48f-9ec9-4442-a60a-ce816dc09a36",
       "label": "Cron: Dashboard Update",
-      "model": "claude-sonnet-4-20250514",
-      "updatedAt": "2026-03-21T23:30:00Z"
+      "sessionKey": "agent:main:cron:a7952d5e-1c73-4595-854d-1e07cbc61e00",
+      "updatedAt": "2026-03-22T00:00:00.049Z",
+      "model": "claude-sonnet-4-20250514"
     }
   ],
   "products": [
@@ -14,49 +14,48 @@
       "name": "meta-cpl-monitor",
       "platform": "Railway",
       "status": "unknown",
-      "lastChecked": "2026-03-21T23:30:00Z"
+      "lastChecked": "2026-03-22T00:00:00.000Z"
     },
     {
       "name": "caption-updater",
       "platform": "Railway", 
       "status": "unknown",
-      "lastChecked": "2026-03-21T23:30:00Z"
+      "lastChecked": "2026-03-22T00:00:00.000Z"
     },
     {
-      "name": "ai-video-pipeline",
+      "name": "ai-video pipeline",
       "platform": "Local",
       "status": "unknown",
-      "lastChecked": "2026-03-21T23:30:00Z"
+      "lastChecked": "2026-03-22T00:00:00.000Z"
     }
   ],
   "crons": [
     {
       "id": "a7952d5e-1c73-4595-854d-1e07cbc61e00",
       "name": "Dashboard Update",
-      "description": "Updates GitHub Pages dashboard",
       "enabled": true,
       "schedule": "*/30 * * * *",
-      "lastRun": "2026-03-21T23:28:18Z",
+      "lastRun": "2026-03-22T00:00:00.020Z",
       "status": "ok",
       "consecutiveErrors": 0,
-      "nextRun": "2026-03-21T23:30:00Z"
+      "nextRun": "2026-03-22T00:00:00.000Z"
     }
   ],
   "recentActivity": [
     {
-      "timestamp": "2026-03-21T23:30:00Z",
-      "event": "Dashboard Update cron job executing",
-      "status": "running"
-    },
-    {
-      "timestamp": "2026-03-21T23:28:18Z", 
+      "timestamp": "2026-03-22T00:00:00.020Z",
       "event": "Dashboard Update cron completed successfully",
       "status": "ok"
     },
     {
-      "timestamp": "2026-03-21T22:58:18Z",
-      "event": "Dashboard Update cron completed successfully", 
-      "status": "ok"
+      "timestamp": "2026-03-22T00:00:00.000Z", 
+      "event": "Dashboard Update cron scheduled to run every 30 minutes",
+      "status": "scheduled"
+    },
+    {
+      "timestamp": "2026-03-22T00:00:00.000Z",
+      "event": "Mission Control dashboard system initialised",
+      "status": "info"
     }
   ]
 }
