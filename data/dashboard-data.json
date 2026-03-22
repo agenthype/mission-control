@@ -1,13 +1,12 @@
 {
-  "lastUpdated": "2026-03-22T00:30:00Z",
+  "lastUpdated": "2026-03-22T01:00:00.000Z",
   "actionRequired": [],
   "activeNow": [
     {
-      "sessionKey": "agent:main:cron:a7952d5e-1c73-4595-854d-1e07cbc61e00",
-      "label": "Cron: Dashboard Update",
-      "kind": "other",
-      "model": "claude-sonnet-4-20250514",
-      "updatedAt": "2026-03-22T00:30:00Z"
+      "type": "cron",
+      "name": "Dashboard Update",
+      "status": "running",
+      "since": "2026-03-22T01:00:00.024Z"
     }
   ],
   "products": [
@@ -15,19 +14,19 @@
       "name": "meta-cpl-monitor",
       "platform": "Railway",
       "status": "unknown",
-      "lastChecked": "2026-03-22T00:30:00Z"
+      "lastCheck": null
     },
     {
       "name": "caption-updater", 
       "platform": "Railway",
       "status": "unknown",
-      "lastChecked": "2026-03-22T00:30:00Z"
+      "lastCheck": null
     },
     {
-      "name": "ai-video-pipeline",
+      "name": "ai-video pipeline",
       "platform": "Local",
       "status": "unknown",
-      "lastChecked": "2026-03-22T00:30:00Z"
+      "lastCheck": null
     }
   ],
   "crons": [
@@ -36,30 +35,27 @@
       "name": "Dashboard Update",
       "enabled": true,
       "schedule": "*/30 * * * *",
-      "lastRun": "2026-03-22T00:30:00Z",
+      "lastRun": "2026-03-22T00:30:00.006Z",
       "lastStatus": "ok",
       "consecutiveErrors": 0,
-      "nextRun": "2026-03-22T01:00:00Z"
+      "nextRun": "2026-03-22T01:00:00.000Z"
     }
   ],
   "recentActivity": [
     {
-      "timestamp": "2026-03-22T00:30:00Z",
-      "event": "Dashboard Update cron job executed successfully",
-      "type": "system",
-      "status": "success"
+      "timestamp": "2026-03-22T01:00:00.024Z",
+      "type": "cron_start",
+      "description": "Dashboard Update cron job started"
     },
     {
-      "timestamp": "2026-03-22T00:00:00Z", 
-      "event": "Dashboard Update cron job executed successfully",
-      "type": "system",
-      "status": "success"
+      "timestamp": "2026-03-22T00:30:00.006Z",
+      "type": "cron_complete",
+      "description": "Dashboard Update completed successfully (38.2s)"
     },
     {
-      "timestamp": "2026-03-21T23:30:00Z",
-      "event": "Dashboard Update cron job executed successfully", 
-      "type": "system",
-      "status": "success"
+      "timestamp": "2026-03-22T00:00:00.000Z",
+      "type": "cron_schedule",
+      "description": "Dashboard Update scheduled for next run"
     }
   ]
 }
